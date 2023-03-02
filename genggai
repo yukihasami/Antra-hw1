@@ -1,0 +1,91 @@
+import "./styles.css";
+
+document.getElementById("app").innerHTML = `
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>hw1</title>
+<meta charset="utf-8">
+<Style>
+.button {
+  width:98%;
+  border-radius:8px;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  display: inline-block;
+  right:50%;
+  font-size: 20px;
+  margin: 15px 10px;
+}
+.h1{
+  font-size:40px;
+  text-align:center;}
+.textin{
+  font-size:5px;
+  text-align:right;
+}
+input[type=text], select {
+  width: 98%;
+  padding: 15px 20px;
+  margin: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}  
+.button1 {background-color:#4e9fd9}
+.button2 {background-color:#4bbf66}
+.input{
+  display: grid;
+}
+
+.jc-center {
+  justify-content: center;
+}
+.flex-parent {
+  display: flex;
+}
+span.text {
+  display:inline;
+  border-radius:8px;
+  color: white;
+  padding: 1px;
+  border: 1px solid blue; 
+  background-color:#4e9fd9;
+  
+}
+</Style>
+</head>
+<body>
+
+<h1  class="h1">Sign Up</h1>
+<form action="/action_page.php">
+<div class="flex-parent jc-center">
+   <input type="text" id="fname" name="firstname" placeholder="First name.."> 
+  <input type="text" id="lname" name="lastname" placeholder="Last name..">
+</div>
+
+<div class="input">
+  <input type="text" id="phone" name="phonenum" placeholder="Mobile NO."> 
+  <input type="text" id="email" name="email" placeholder="Email">
+</div>
+
+<div class="flex-parent jc-center">
+  <input type="text" id="password" name="password" placeholder="Password"> 
+  <input type="text" id="comfirmpwd" name="compwd" placeholder="Comfirm Password">
+</div>
+<input type="checkbox" id="agree" name="agree" >
+<label>I agree</label> <span>&nbsp;&nbsp;&nbsp;by clicking <span class="text">Register</span>, you agree to the <a href="url">Terms and Conditions</a> 
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;set out by this site, including our Cookie use</br></span>
+<div class="flex-parent jc-center">
+  <input type="submit" class="button button1" value="Register">
+  <button type="submit" class="button button2">Sign in</button>
+</div>
+</form>
+
+</body>
+</html>
+
+
+`;
